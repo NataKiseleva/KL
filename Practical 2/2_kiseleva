@@ -1,0 +1,123 @@
+Excercise 1
+0 = 0000 
+1 = 0001
+2 = 0010 
+3 = 0011    
+4 = 0100
+5 = 0101
+6 = 0110
+7 = 0111
+8 = 1000
+9 = 1001  
+A = 1010
+B = 1011   
+C = 1100   
+D = 1101   
+E = 1110
+F = 1111  
+
+Excercise 2
+1. [+0001][-11]
+2. [+1111][+11]
+	   
+Excercise 3
+---------------       ---------------       ---------------
+| x[0] | next |--->-- | x[1] | next |--->---| x[2] | NULL | 
+---------------       ---------------       ---------------
+                      /
+           --------------
+           |  y  | NULL |
+	   --------------
+
+Move the item to the end of the list and trim the list
+
+Excercise 4
+a)
+```
+             1
+            / \
+       ----2   3
+      /  /  \     
+ ----4   5   6    
+/ / / \ 
+7 8 9 10
+```
+b)
+```
+             1
+            / \
+           2   3
+	 / \   / \
+        4   5 6   7
+       /    / \    
+       8    9  10
+```       
+c)
+```
+	     1
+            / \
+           2   3
+	 / \   / \
+      --4   5 6   7
+     /  /      \     
+     8  9       10  
+```
+Excercise 5
+
+``` 
+ 9 -> 3			8 -> 4		7 -> 1
+ 12 -> 6		4 -> 2		11 -> 1
+ 12 -> 4		10 -> 2
+ 6 -> 3			10 -> 5 
+ 6 -> 2			2 -> 1
+ 5 -> 1			3 -> 1
+ ```
+
+
+Excercise 6
+12 and 10
+
+Excercise 7
+in file
+
+Excercise 8
+`echo cat > testfile;
+echo cat2 > testfile2`
+
+`md5sum testfile testfile2`
+``` 
+54b8617eca0e54c7d3c8e6732c6b687a  testfile
+4307ab44204de40235bad8c66cce0ae9  testfile2
+```
+
+`sha1sum testfile testfile2`
+```
+8f6abfbac8c81b55f9005f7ec09e32d29e40eb40  testfile
+f476b8741936d51309437ffc5c87081c7b24ffb1  testfile2
+```
+`sha512sum testfile testfile2`
+```
+644c7b649d31fc3c432534fb80d71a3a5e2b3eb65e737eb15c6e6af96e40c8ee3dcb55fd172e263783e62f8d94f5c99e12a016d581b860700640e45c9c1b87b3  testfile
+84c308d32247eb3b590ff27b47d5018551dd6ad3e696b6d61b1e70fed7570522812a2c3353e93db38728f4a10de5156996b144d2b150f1ffe92ba7a301b5bfe2  testfile2
+```
+`b2sum testfile testfile2`
+```
+0247169dd9d258599e4a4327067f74f3dbd7db0e6d623954212738e62c233b410141a1eab4130073b99a8959e3d52f70da7402ae8d94ca6333126ec3b4e0bca7  testfile
+48d92c152ff4c58a948d75f7aaba6ccaf00f8f9beb78e3399fe0f325e758af657c07eb2d83a753f3fe16074b149f46390abce8673c7477f75aae99427c9defa7  testfile2
+```
+Excercise 9
+
+def ceasar(word):
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	res = ""
+
+	for x in word:
+		for i, slot in enumerate(alphabet):
+			if x != alphabet[len(alphabet)-1]:
+				if x == slot:
+					res += alphabet[i+1]			
+			else:
+ 		   		res += alphabet[0]
+	return res
+
+
